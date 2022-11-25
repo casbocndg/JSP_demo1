@@ -1,0 +1,27 @@
+body{
+    background-image: url("../imgs/1.jpg");
+    /*添加动画*/
+    animation-name: login-animation;
+   /*动画执行时间*/
+    animation-duration: 10s;
+   /*动画延时时间*/
+    animation-delay: 2s;
+   /*动画开始时间 无线*/
+    animation-iteration-count: infinite;
+   /*动画循环播放*/
+    animation-play-state: running;
+}
+
+/*添加动画属性*/
+@keyframes login-animation {
+    0% {background: url("../imgs/1.png")}
+    35% {background: url("../imgs/2.png")}
+    60% {background: url("../imgs/3.png")}
+    100% {background: url("../imgs/1.png")}
+}
+
+.loginForm{
+    background: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    margin: 120px auto;
+}
